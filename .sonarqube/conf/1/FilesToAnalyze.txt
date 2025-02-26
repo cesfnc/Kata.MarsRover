@@ -1,0 +1,8 @@
+﻿C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\CommandRetriever.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\CoordinateService.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\ICommandRetriever.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\IMapGenService.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\IRoverService.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\MapGenService.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\Navigator.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services\RoverService.cs

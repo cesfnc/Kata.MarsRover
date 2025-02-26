@@ -1,0 +1,13 @@
+﻿C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Entities\CommandMR.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Entities\Coordinates.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Entities\Rover.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Entities\WorldMap.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Enums\Movement.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Enums\Orientation.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Enums\Rotation.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Exceptions\ApplicationBaseException.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Exceptions\CollisionException.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Extensions\EnumExtensions.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Interfaces\ICommandRetriever.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Interfaces\IMapGenService.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Common\Interfaces\IRoverService.cs

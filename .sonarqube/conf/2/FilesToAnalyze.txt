@@ -1,0 +1,12 @@
+﻿C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\CoordinateService_Test\CoordinateService_Add.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\CoordinateService_Test\CoordinateService_Exceed.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\CoordinateService_Test\CoordinateService_Remap.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\MapGenService_Tests\MapGenService_Create.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\Navigator_Tests\Navigator_SendCommandsToRover.cs
+C:\Users\Ellero Cesare\Desktop\Kata\MarsRover\Kata.MarsRover.Services.Test\RoverService_Tests\RoverService_Land.cs
+C:\Users\Ellero Cesare\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Ellero Cesare\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\Ellero Cesare\.nuget\packages\microsoft.testplatform.testhost\17.8.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\Ellero Cesare\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Ellero Cesare\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ellero Cesare\.nuget\packages\mstest.testadapter\3.1.1\build\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll
