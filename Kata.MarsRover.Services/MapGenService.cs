@@ -4,10 +4,10 @@ namespace Kata.MarsRover.Services
 {
     public class MapGenService : IMapGenService
     {
-        public WorldMap Create(int m, int p, IEnumerable<Coordinates> obstacles)
+        public WorldMap Create(int meridians, int parallels, IEnumerable<Coordinates> obstacles)
         {
-            if (m == 0 || p == 0) throw new ArgumentException($"Map must have at least one meridian/parallel ({m},{p})");
-            return new WorldMap(m, p, obstacles);
+            if (meridians == 0 || parallels == 0) throw new ArgumentException($"Map must have at least one meridian/parallel ({meridians},{parallels})");
+            return new WorldMap(meridians, parallels, obstacles);
         }
     }
 }

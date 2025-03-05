@@ -1,9 +1,9 @@
 ﻿namespace Kata.MarsRover.Common.Entities
 {
-    public class WorldMap(int m, int p, IEnumerable<Coordinates> obstacles)
+    public class WorldMap(int meridians, int parallels, IEnumerable<Coordinates> obstacles)
     {
-        public int M => m;
-        public int P => p;
+        public int Meridians => meridians;
+        public int Parallels => parallels;
         public IEnumerable<Coordinates> Obstacles => obstacles;
     }
 }

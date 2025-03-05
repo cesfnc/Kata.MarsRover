@@ -18,10 +18,10 @@ namespace Kata.MarsRover.Services.Test.MapGenService_Tests
         [DataRow(0,0)]
         [DataRow(0,1)]
         [DataRow(1,0)]
-        public void ThrowsArgumentException_WhenParamsAre0(int n, int m)
+        public void ThrowsArgumentException_WhenParamsAre0(int meridians, int parallels)
         {
             Assert.ThrowsException<ArgumentException>(
-                () => sut.Create(n, m, It.IsAny<IEnumerable<Coordinates>>()));
+                () => sut.Create(meridians, parallels, It.IsAny<IEnumerable<Coordinates>>()));
         }
     }
 }

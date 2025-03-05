@@ -2,7 +2,7 @@
 {
     public enum Movement
     {
-        F,
-        B
+        Front,
+        Back
     }
 }

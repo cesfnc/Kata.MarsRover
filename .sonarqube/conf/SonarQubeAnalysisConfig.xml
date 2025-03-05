@@ -16,7 +16,7 @@
     <ConfigSetting Id="VsCoverageConverterToolPath" />
     <ConfigSetting Id="UnchangedFilesPath" />
     <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="C:\Users\Ellero Cesare\Desktop\Kata\MarsRover" />
-    <ConfigSetting Id="settings.file.path" Value="C:\Users\Ellero Cesare\.dotnet\tools\.store\dotnet-sonarscanner\9.2.0\dotnet-sonarscanner\9.2.0\tools\netcoreapp3.1\any\SonarQube.Analysis.xml" />
+    <ConfigSetting Id="settings.file.path" Value="C:\Users\Ellero Cesare\.dotnet\tools\.store\dotnet-sonarscanner\9.2.1\dotnet-sonarscanner\9.2.1\tools\netcoreapp3.1\any\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
     <Property Name="sonaranalyzer-cs.nuget.packageVersion">10.4.0.108396</Property>
@@ -143,13 +143,12 @@
     <Property Name="sonar.java.jvmframeworkconfig.activate">true</Property>
     <Property Name="sonar.updatecenter.url">https://downloads.sonarsource.com/sonarqube/update/update-center.properties</Property>
     <Property Name="sonar.core.id">147B411E-AZRvSnythI687gnlZYsF</Property>
-    <Property Name="sonar.core.startTime">2/20/2025 2:31:05 PM</Property>
+    <Property Name="sonar.core.startTime">3/5/2025 2:22:28 PM</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
     <Property Name="sonar.cs.opencover.reportsPaths">**coverage.json</Property>
     <Property Name="sonar.exclusions">**coverage.json</Property>
-    <Property Name="sonar.scanner.truststorePassword" />
   </LocalSettings>
   <ScannerOptsSettings />
   <AnalyzersSettings>

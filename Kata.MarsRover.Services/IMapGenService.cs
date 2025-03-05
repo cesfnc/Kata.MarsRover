@@ -4,6 +4,6 @@ namespace Kata.MarsRover.Services
 {
     public interface IMapGenService
     {
-        WorldMap Create(int m, int p, IEnumerable<Coordinates> obstacles);
+        WorldMap Create(int meridians, int parallels, IEnumerable<Coordinates> obstacles);
     }
 }

@@ -21,7 +21,7 @@ namespace Kata.MarsRover.Services
 
         public void SetUp()
         {
-            MarsMap = mapGenService.Create(36,18, new List<Coordinates> {  });
+            MarsMap = mapGenService.Create(36,18, []);
             RoverOne = roverService.Land(0,0,Orientation.E);
         }
 

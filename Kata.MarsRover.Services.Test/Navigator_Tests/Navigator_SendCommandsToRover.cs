@@ -27,7 +27,7 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
         {
             commandRetriever
                 .Setup(_ => _.GetList())
-                .Returns(new List<CommandMR> { });
+                .Returns([]);
             sut.SendCommandsToRover();
 
             roverService.Verify(_ => _.Move(It.IsAny<Rover>(), It.IsAny<WorldMap>(), It.IsAny<Movement>()), Times.Never());
@@ -42,10 +42,10 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
         public void ShouldMoveAndRotate_WhenCommandsAreDefined()
         {
             var commands = new List<CommandMR>() { 
-                new CommandMR(Movement.F, null),
-                new CommandMR(Movement.B, null),
-                new CommandMR(null, Rotation.R),
-                new CommandMR(null, Rotation.L)
+                new(Movement.Front, null),
+                new(Movement.Back, null),
+                new(null, Rotation.Right),
+                new(null, Rotation.Left)
             };
 
             commandRetriever
@@ -54,7 +54,7 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
 
             mapGenService
                 .Setup(_ => _.Create(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<IEnumerable<Coordinates>>()))
-                .Returns(new WorldMap(10, 10, new List<Coordinates> { }));
+                .Returns(new WorldMap(10, 10, []));
 
             roverService.Setup(_ => _.Land(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<Orientation>()))
                 .Returns(new Rover(0, 0, null));
@@ -66,12 +66,12 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
             roverService.Verify(_ => _.Rotate(It.IsAny<Rover>(), It.IsAny<Rotation>()), Times.Exactly(2));
         }
 
-        [DataRow(Rotation.L)]
-        [DataRow(Rotation.R)]
+        [DataRow(Rotation.Left)]
+        [DataRow(Rotation.Right)]
         [TestMethod]
         public void ShouldRotate_WhenRotateCommandIsDefined(Rotation r)
         {
-            var commands = new List<CommandMR>() { new CommandMR(null, r) };
+            var commands = new List<CommandMR>() { new(null, r) };
 
             commandRetriever
                 .Setup(_ => _.GetList())
@@ -79,7 +79,7 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
 
             mapGenService
                 .Setup(_ => _.Create(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<IEnumerable<Coordinates>>()))
-                .Returns(new WorldMap(10, 10, new List<Coordinates> { }));
+                .Returns(new WorldMap(10, 10, []));
 
             roverService.Setup(_ => _.Land(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<Orientation>()))
                 .Returns(new Rover(0, 0, null));
@@ -91,12 +91,12 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
             roverService.Verify(_ => _.Rotate(It.IsAny<Rover>(), It.IsAny<Rotation>()), Times.Exactly(1));
         }
 
-        [DataRow(Movement.F)]
-        [DataRow(Movement.B)]
+        [DataRow(Movement.Front)]
+        [DataRow(Movement.Back)]
         [TestMethod]
         public void ShouldMove_WhenMoveCommandIsDefined(Movement m)
         {
-            var commands = new List<CommandMR>() { new CommandMR(m, null) };
+            var commands = new List<CommandMR>() { new(m, null) };
 
             commandRetriever
                 .Setup(_ => _.GetList())
@@ -104,7 +104,7 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
 
             mapGenService
                 .Setup(_ => _.Create(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<IEnumerable<Coordinates>>()))
-                .Returns(new WorldMap(10, 10, new List<Coordinates> { }));
+                .Returns(new WorldMap(10, 10, []));
 
             roverService.Setup(_ => _.Land(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<Orientation>()))
                 .Returns(new Rover(0,0,null));

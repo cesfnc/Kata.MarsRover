@@ -13,7 +13,7 @@ namespace Kata.MarsRover.Services.Test.CoordinateService_Test
         public void CoordinatesOnMap_DoesNotExceed(int x, int y)
         {
             var position = new Coordinates(x, y);
-            var map = new WorldMap(12, 6, new List<Coordinates> { });
+            var map = new WorldMap(12, 6, []);
 
             var actual = CoordinateService.Exceed(position, map);
             Assert.IsFalse(actual);
@@ -27,7 +27,7 @@ namespace Kata.MarsRover.Services.Test.CoordinateService_Test
         public void CoordinatesOverMap_DoesExceed(int x, int y)
         {
             var position = new Coordinates(x, y);
-            var map = new WorldMap(12, 6, new List<Coordinates> { });
+            var map = new WorldMap(12, 6, []);
 
             var actual = CoordinateService.Exceed(position, map);
             Assert.IsTrue(actual);

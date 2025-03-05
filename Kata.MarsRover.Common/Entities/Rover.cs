@@ -4,13 +4,13 @@ namespace Kata.MarsRover.Common.Entities
 {
     public class Rover
     {
-        public Rover(int x, int y, Orientation? o)
+        public Rover(int x, int y, Orientation? orientation)
         {
             Position = new Coordinates(x, y);
-            O = o == null ? Orientation.N : o.Value;
+            Orientation = orientation == null ? Orientation.N : orientation.Value;
         }
 
         public Coordinates Position { get; set; }
-        public Orientation O { get; set; }
+        public Orientation Orientation { get; set; }
     }
 }
