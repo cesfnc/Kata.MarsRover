@@ -20,6 +20,7 @@ namespace Kata.MarsRover.Services.Test.CoordinateService_Test
             var expected = new Coordinates(xRemapped, yRemapped);
 
             actual.Should().NotBeNull().And.BeEquivalentTo(expected);
+
         }
     }
 }

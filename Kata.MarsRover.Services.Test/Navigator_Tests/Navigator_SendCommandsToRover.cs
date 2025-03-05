@@ -69,9 +69,9 @@ namespace Kata.MarsRover.Services.Test.RoverService_Tests
         [DataRow(Rotation.Left)]
         [DataRow(Rotation.Right)]
         [TestMethod]
-        public void ShouldRotate_WhenRotateCommandIsDefined(Rotation r)
+        public void ShouldRotate_WhenRotateCommandIsDefined(Rotation rotation)
         {
-            var commands = new List<CommandMR>() { new(null, r) };
+            var commands = new List<CommandMR>() { new(null, rotation) };
 
             commandRetriever
                 .Setup(_ => _.GetList())
